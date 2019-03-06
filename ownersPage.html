@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <title>Owners</title>
+
+        <link href="vetStylesheet.css" rel="stylesheet" type ="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo">Hope Valley Vets</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="ownersPage.html">Owners</a></li>
+                        <li><a href="petsPage.html">Pets</a></li>
+                        <li><a href="addressPage.html">Address</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+
+            </div>
+
+
+        </header>
+
+        <main>
+                <div class="OwnerTable">
+                    <table>
+                        <thead>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Landline Number</th>
+                            <th>Mobile Number</th>
+                            <th>Address ID</th>
+                        </thead>
+                        <tbody id="ownerBody">
+        
+                        </tbody>   
+                    </table>
+                </div>
+                </main>
+        
+                <aside>
+                    <form>
+                        <h3>Input new Owner</h3>
+                        <input id="first_name" type="text" name="first_name" placeholder="First Name"></br>
+                        <input id="last_name" type="text" name="last_name" placeholder="Last Name"></br>
+                        <input id="email" type="text" name="email" placeholder="Email"></br>
+                        <input id="landline_number" type="text" name="landline_number" placeholder="Landline Number"></br>
+                        <input id="mobile_number" type="text" name="mobile_number" placeholder="Mobile Number"></br>
+                        <input id="address" type="text" name="address" placeholder="Address"></br>
+                        <input type="submit" name="create" onclick="createOwner()">
+                    </form>
+                </aside>
+                
+                <script src="ownerGenerate.js"></script>
+                <script src="addOwner.js"></script>
+            </body>
+        </html>
